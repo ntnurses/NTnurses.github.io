@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>WE NEED YOUR HELP</title>
+    
+    <!-- Import Google Font: Shrikhand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -13,41 +19,46 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4; /* Adjust to match your theme */
+            background-color: #f4f4f4;
             color: #333;
         }
 
-        /* Top Header Bar */
+        /* Header Section */
         .site-header {
             display: flex;
-            flec-direction: column;
+            flex-direction: column;
             align-items: center;
-            padding: 20px;
+            text-align: center;
+            padding: 25px 15px;
             background-color: #ffffff;
             border-bottom: 1px solid #ddd;
         }
 
-        /* Top Left Circular Image */
+        /* 4x Enlarged Circular Avatar */
         .profile-avatar {
             width: 240px;
             height: 240px;
-            border-radius: 50%; /* Makes any square image a perfect circle */
+            border-radius: 50%;
             object-fit: cover;
             margin-bottom: 15px;
         }
 
+        /* Shrikhand Custom Heading */
         .site-title {
-            font-size: 1.4rem;
-            font-weight: bold;
+            font-family: 'Shrikhand', cursive;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            color: #111111;
+            line-height: 1.2;
         }
 
-        /* Scrolling Announcement Bar */
+        /* Scrolling Marquee Bar */
         .scrolling-bar {
-            background-color: #111;
-            color: #fff;
+            background-color: #111111;
+            color: #ffffff;
             overflow: hidden;
             white-space: nowrap;
-            padding: 8px 0;
+            padding: 10px 0;
             font-size: 0.9rem;
         }
 
@@ -64,19 +75,19 @@
 
         /* Navigation Bar */
         .main-nav {
-            background-color: #222;
+            background-color: #222222;
         }
 
         .main-nav ul {
             display: flex;
             justify-content: space-around;
             list-style: none;
-            overflow-x: auto; /* Allows horizontal swipe on small screens if menu is long */
-            padding: 10px 0;
+            overflow-x: auto;
+            padding: 12px 0;
         }
 
         .main-nav a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             font-weight: bold;
             font-size: 0.85rem;
@@ -85,12 +96,12 @@
         }
 
         .main-nav a:hover {
-            color: #ffca28; /* Accent color on hover/tap */
+            color: #ffca28;
         }
 
-        /* Main Content Area */
+        /* Main Body Content */
         .content {
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
     </style>
@@ -99,13 +110,13 @@
 
     <!-- Header Section -->
     <header class="site-header">
-        <img src="TOPLEFT.webp" alt="Profile" class="profile-avatar">
-        <h1 class="site-title">Your Brand Name</h1>
+        <img src="avatar.png" alt="Logo" class="profile-avatar">
+        <h1 class="site-title">WE NEED YOUR HELP</h1>
     </header>
 
     <!-- Scrolling Text Bar -->
     <div class="scrolling-bar">
-        <div class="scrolling-text">Welcome to my site! • Scanned via QR code • Updates coming soon! •</div>
+        <div class="scrolling-text">Welcome • Scanned via QR code • Important updates below •</div>
     </div>
 
     <!-- Navigation Menu -->
@@ -118,10 +129,10 @@
         </ul>
     </nav>
 
-    <!-- Main Body Area -->
+    <!-- Main Content Area -->
     <main class="content">
         <h2>Welcome</h2>
-        <p>Your main page content will go here.</p>
+        <p>Content for your landing page will go here.</p>
     </main>
 
 </body>
